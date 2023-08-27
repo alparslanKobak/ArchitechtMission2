@@ -1,0 +1,228 @@
+.custom-header {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    /* içerikleri dikey olarak ortala */
+    justify-content: space-between;
+    /* sol logo, başlık ve sağ logo arasında eşit boşluk bırak */
+    width: 100%;
+    /* sayfanın tamamını kapla */
+    background-image: url(https://www.obifin.com/blog/wp-content/uploads/2023/03/kuveyt-turk-acik-banakcilik-1.jpeg);
+    /* buraya arka plan resminin URL'sini ekleyin */
+    background-size: cover;
+    /* arka plan resmini header'a sığdır */
+    background-repeat: no-repeat;
+    /* tekrar etmeyen arka plan resmi */
+    background-position: 10% 60%;
+    padding: 2%;
+    /* header'in yukarı ve aşağı kısımlarında biraz boşluk bırak */
+}
+
+a{
+    text-decoration: none;
+    color: #FFD700;
+}
+
+
+
+.logo {
+    height: 50%;
+    /* logo boyutunu isteğinize göre ayarlayabilirsiniz */
+    width: auto;
+    /* genişliği otomatik ayarla, aspect ratio'yu koru */
+    box-shadow: 0px 4px 10px hsla(0, 0%, 97%, 0.877);
+    /* gölge ekleyin */
+}
+
+.left-logo {
+    margin-left: 1%;
+    /* sol tarafta %1 boşluk bırak */
+}
+
+.right-logo {
+    margin-right: 1%;
+    /* sağ tarafta %1 boşluk bırak */
+}
+
+/* --------------------------------- Navbar kısmı ---------------------------------------*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkgreen;
+    padding: 1em;
+    font-family: Arial, sans-serif;
+    border: 1px solid gray;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.877);
+
+    position: sticky;
+    /* Yapışkan efekti için eklenen özellik */
+    top: 0;
+    /* Navbar'ın ekranın üst kısmında kalmasını sağlar */
+    z-index: 1000;
+    /* Diğer öğelerin üzerinde görünmesini sağlar */
+
+}
+
+.navbar-logo {
+    height: 70px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 97%, 0.877);
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+    /* Menüler arasındaki boşluk */
+}
+
+
+.navbar-menu li a {
+    color: #FFD700;
+    /* Karamel, altın arası renk */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: larger;
+}
+
+.navbar-menu li a:hover {
+   
+    color: rgb(255, 251, 251);
+}
+
+.main-title-border-link {
+    text-decoration: none;
+    padding: 1%;
+    border: 3px solid white;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 97%, 0.877);
+
+}
+
+.main-title-border-link:hover {
+    background-color: #479955;
+
+}
+
+.main-title {
+    color: #FFD700;
+    font-size: larger;
+}
+
+.navbar-search {
+    display: flex;
+    gap: 5px;
+    /* Search bar ve buton arasındaki boşluk */
+
+    border-radius: 15px;
+}
+
+.navbar-search input {
+    padding: 0.5em;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.navbar-search button {
+    background-color: darkgreen;
+    color: #FFD700;
+    margin-left: 1%;
+
+    /* border-radius: 15px; Köşeleri hafif oval yapmak için */
+    /* padding: 0.5em 1em; */
+    cursor: pointer;
+    transition: all 0.3s;
+    /* Hover efekti için animasyon */
+    border: 2px solid #b19e35;
+    border-radius: 15px;
+}
+
+.navbar-search button:hover {
+    background-color: #479955;
+    color: rgb(255, 251, 251);
+    /* transform: scale(1.05); Butonun hafif büyümesi için */
+}
+
+
+
+
+/* ---------------------------------- Tavsiyeler alanı ------------------------------------------*/
+
+.tavsiye-section {
+    background-color: #479955;
+    padding: 20px;
+}
+
+/* .tavsiyeci-container {
+    display: flex;
+    align-items: center;
+} */
+
+.tavsiyeci-img {
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 4%, 0.877);
+    
+}
+
+.tavsiyeci-name {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-left: 10px;
+}
+
+.tavsiye-baslik {
+    color: #FFD700;/* Karamel rengi */
+}
+
+.tavsiye-hr {
+    margin: 10px 0;
+}
+
+.tavsiye-article p {
+    color: white;
+    margin-bottom: 3%;
+}
+
+/* ---------------------------- Footer Kısmı --------------------------------------- */
+
+.footer {
+    background-color: darkgreen;
+    padding: 20px 0;
+    border: 1px solid gray;
+}
+
+.golden-col {
+    border-right: 1px solid white; /* col-4'ler arasını ayırma */
+    padding: 0 20px;
+}
+
+.golden-col:last-child {
+    border-right: none; /* Son .col-4'un sağında border olmaması için */
+}
+
+.golden-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.golden-li {
+    padding: 5px 0;
+    transition: background-color 0.3s; /* Hover efekti için animasyon */
+}
+
+.golden-li:hover {
+   background-color: #479955; /* Hover efekti */
+}
+
+.white-shadow{
+    box-shadow: 0px 4px 10px hsla(0, 0%, 97%, 0.877);
+}
